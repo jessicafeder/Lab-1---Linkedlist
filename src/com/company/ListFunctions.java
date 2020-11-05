@@ -2,7 +2,7 @@ package com.company;
 
 import org.w3c.dom.Node;
 
-public class ListFunctions {
+/*public class ListFunctions {
     private Node head;
     private int listCount;
 
@@ -19,7 +19,7 @@ public class ListFunctions {
             this.value = v;
     }
 
-    }*/
+    }
 
     public void add(int v){
         Node linkedTemp = new Node(v);
@@ -63,4 +63,4 @@ public class ListFunctions {
     }
 
 
-}
+}*/
