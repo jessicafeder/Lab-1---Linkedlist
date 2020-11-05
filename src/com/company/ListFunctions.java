@@ -2,16 +2,16 @@ package com.company;
 
 import org.w3c.dom.Node;
 
-/*public class ListFunctions {
+public class ListFunctions {
     private Node head;
     private int listCount;
 
-    public ListFunctions(){
+    /*public ListFunctions(){
         head = new Node(null);
         listCount = 0;
-    }
+    }*/
 
-    /*public class Node{
+    public class Node{
         protected int value;
         protected Node next;
 
@@ -33,7 +33,7 @@ import org.w3c.dom.Node;
 
     }
 
-    public int get(int index){
+    /*public int get(int index){
 
         if(index < 0)
             return null;
@@ -45,7 +45,7 @@ import org.w3c.dom.Node;
             }
             }
             return 1;
-        }
+        }*/
 
 
     public void remove(int v){
@@ -63,4 +63,4 @@ import org.w3c.dom.Node;
     }
 
 
-}*/
+}
