@@ -10,7 +10,7 @@ public class Main {
         list.add(1);
         list.add(2);
         list.add(3);
-
+        //list.prettyPrint();
         System.out.println("LinkedList \n~~~~~~~~~~~~~~~~~~~~~~~~~");
         System.out.println("Current list: " + list);
         System.out.println("List size before adding element: " + list.size()); // --> 3
@@ -37,6 +37,8 @@ public class Main {
         System.out.println("Peek displays the top element: " + stack.peek());
         stack.pop();
         System.out.println("We used pop to remove an element, new top element: " + stack.peek());
+
+        System.out.println(list.contains(null));
     }
 
 }
