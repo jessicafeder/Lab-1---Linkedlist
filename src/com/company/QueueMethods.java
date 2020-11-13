@@ -1,19 +1,19 @@
 package com.company;
 
 public class QueueMethods extends ListFunctions {
-    public void enqueue(int i){
+    public void enqueue(int i) {
         add(i);
     }
 
-    /*public int dequeue(){ // Vi måste implementera .get i ListFunctions
+    public int dequeue() {
         int temp = get(0);
         remove(0);
         return temp;
     }
 
-    public int peek(){
-        //return get(0);
-    }*/
+    public int peek() {
+        return get(0);
+    }
 
 
 }

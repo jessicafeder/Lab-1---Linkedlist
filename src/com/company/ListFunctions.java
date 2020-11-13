@@ -1,10 +1,10 @@
 package com.company;
 
-
 public class ListFunctions {
     private Node head;
-    private int listCount;
     private int size;
+    private Object Node;
+
 
     public class Node {
         protected int value;
@@ -29,34 +29,32 @@ public class ListFunctions {
 
         }
     }
-    // inte klat
-    public void add(int i, int e) {
+    public void add(int index, int e) {
+        Node newNode = new Node(e);
+        if(index == 0){
+            newNode.next = head;
+            head = newNode;
+            return;
+        }
+        int i = 0;
         Node n = head;
-        head = new Node(e);
-        while (i < e) {
+        while (i < index - 1) {
             n = n.next;
             i++;
         }
+        newNode.next = n.next;
+        n.next = newNode;
     }
-    //inte klar
-    public boolean contains(Object o) {
-        String e = null;
-        while (o==null;e == null){
-
-            if(o==null? e == null : o.equals(e)){
+    public boolean contains(int e) {
+        Node n = head;
+        while (Node!=null) {
+            if (n.value == e) {
                 return true;
-
             }
+        }       return false;
 
-        }
-
-       /*
-        Node n=head;
-        if (n.equals(e)){
-            return true;
-        }
-        return false;*/
     }
+
 
     public int get(int index) {
         int i = 0;
@@ -83,7 +81,7 @@ public class ListFunctions {
         size --;
     }
 
-    public void prettyPrint(){
+    /*public void prettyPrint(){
         System.out.print("LinkedList ->");
         Node n = head;
         while (n != null){
@@ -91,7 +89,7 @@ public class ListFunctions {
             n = n.next;
 
         }
-    }
+    }*/
     public boolean empty() {
         return (head == null);
     }

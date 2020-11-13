@@ -10,7 +10,6 @@ public class Main {
         list.add(1);
         list.add(2);
         list.add(3);
-        //list.prettyPrint();
         System.out.println("LinkedList \n~~~~~~~~~~~~~~~~~~~~~~~~~");
         System.out.println("Current list: " + list);
         System.out.println("List size before adding element: " + list.size()); // --> 3
