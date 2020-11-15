@@ -1,6 +1,6 @@
 package com.company;
 
-public class ListFunctions {
+public class LinkedList {
     private Node head;
     private int size;
     private Object Node;
@@ -11,7 +11,7 @@ public class ListFunctions {
         protected Node next;
 
         public Node(int v) {
-            value = v;
+            this.value = v;
         }
     }
 

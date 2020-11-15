@@ -1,6 +1,6 @@
 package com.company;
 
-public class StackMethods extends ListFunctions{
+public class StackMethods extends LinkedList{
 
     public void push(int i){
         add(i);

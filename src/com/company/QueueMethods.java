@@ -1,6 +1,7 @@
 package com.company;
 
-public class QueueMethods extends ListFunctions {
+public class QueueMethods extends LinkedList {
+
     public void enqueue(int i) {
         add(i);
     }
