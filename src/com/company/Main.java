@@ -1,12 +1,11 @@
 package com.company;
 
-import java.util.LinkedList;
-import java.util.Stack;
 
 public class Main {
 
     public static void main(String[] args) {
-        LinkedList<Integer> list = new LinkedList<>();
+        ListFunctions list = new ListFunctions();
+        QueueMethods queue = new QueueMethods();
         list.add(1);
         list.add(2);
         list.add(3);
@@ -25,9 +24,9 @@ public class Main {
 
         System.out.println("List size after removing element: " + list.size()); // --> 3
         System.out.println("Returns true if list contains element 3: " + list.contains(3)); // --> returns true
-        System.out.println("Returns false as list is not empty: " + list.isEmpty());
+        System.out.println("Returns false as list is not empty: " + list.empty());
 
-        Stack <Integer> stack = new Stack<>();
+        StackMethods stack = new StackMethods();
         System.out.println("\nStack\n~~~~~~~~~~~~~~~~~~~~~~~~~");
         stack.push(1);
         stack.push(10);
@@ -37,7 +36,6 @@ public class Main {
         stack.pop();
         System.out.println("We used pop to remove an element, new top element: " + stack.peek());
 
-        System.out.println(list.contains(null));
     }
 
 }
