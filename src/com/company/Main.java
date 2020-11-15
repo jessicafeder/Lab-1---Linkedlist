@@ -9,7 +9,7 @@ public class Main {
         list.add(2);
         list.add(3);
         System.out.println("LinkedList \n~~~~~~~~~~~~~~~~~~~~~~~~~");
-        System.out.println("Current list: " + list); // returnerar inte listan
+        System.out.println("Current list: " + list); // returnerar inte listan efter implementation
         System.out.println("List size before adding element: " + list.size()); // --> 3
 
         list.add(0,99);
@@ -40,7 +40,7 @@ public class Main {
         stack.push(1);
         stack.push(10);
         stack.push(100);
-        System.out.println(stack); // returnerar inte listan
+        System.out.println(stack); // returnerar inte listan efter implementation
         System.out.println("Peek displays the top element: " + stack.peek());
         stack.pop();
         System.out.println("We used pop to remove an element, new top element: " + stack.peek());

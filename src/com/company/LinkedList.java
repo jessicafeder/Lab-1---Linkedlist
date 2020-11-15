@@ -6,14 +6,15 @@ public class LinkedList {
     private Object Node;
 
 
-    public class Node {
+    public static class Node {
         protected int value;
         protected Node next;
 
-        public Node(int v) {
+        Node(int v) {
             this.value = v;
         }
     }
+
 
     public void add(int e) {
         Node newNode= new Node (e);
