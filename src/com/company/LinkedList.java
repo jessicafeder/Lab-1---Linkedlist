@@ -1,17 +1,44 @@
 package com.company;
 
 public class LinkedList {
-    private Node head;
-    private int size;
-    private Object Node;
+    Node head;
+    Object Node;
+    int size;
 
 
-    public static class Node {
-        protected int value;
-        protected Node next;
+    static class Node {
+        int value;
+        Node next;
 
         Node(int v) {
+            next = null;
             this.value = v;
+        }
+    }
+
+    public static LinkedList insert (LinkedList list, int value){
+        Node newNode = new Node(value);
+        newNode.next = null;
+
+        if(list.head == null){
+            list.head = newNode;
+        } else{
+            Node last = list.head;
+            while (last.next != null){
+                last = last.next;
+            }
+            last.next = newNode;
+        }
+        return list;
+    }
+
+    public static void printList (LinkedList list){
+        Node currNode = list.head;
+        System.out.print("Current list: ");
+
+        while (currNode != null){
+            System.out.print(currNode.value + " ");
+            currNode = currNode.next;
         }
     }
 
